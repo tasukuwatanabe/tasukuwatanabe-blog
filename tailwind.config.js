@@ -2,7 +2,11 @@
 export default {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      aspectRatio: {
+        'thumbnail': '16/7'
+      },
+    },
   },
   plugins: [],
 }
