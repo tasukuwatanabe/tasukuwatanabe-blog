@@ -1,6 +1,8 @@
 <template>
   <div class="min-h-screen flex flex-col">
-    <header class="grid-rows-subgrid border-b fixed left-0 right-0 bg-white">
+    <header
+      class="grid-rows-subgrid border-b bg-white fixed left-0 right-0 z-10"
+    >
       <div
         class="container max-w-5xl mx-auto py-2 px-5 flex justify-between items-center h-16"
       >
@@ -12,31 +14,33 @@
           />
           <h1 class="text-l font-semibold">Tasuku Watanabe</h1>
         </NuxtLink>
-        <div class="block md:hidden">
-          <Icon name="solar:hamburger-menu-linear" size="2em" />
+        <div @click="toggleModal" class="block md:hidden text-slate-700">
+          <Icon v-if="showModal" name="ic:baseline-close" size="2em" />
+          <Icon v-else name="ic:baseline-menu" size="2em" />
         </div>
       </div>
     </header>
-    <main class="bg-slate-100 grow py-12 mt-16">
-      <div class="container max-w-5xl mx-auto px-5 grid md:grid-cols-4">
-        <div class="hidden md:block">
-          <sidebar class="fixed">
-            <ul class="grid gap-7">
-              <li><NuxtLink to="/about">自己紹介</NuxtLink></li>
-              <li>
-                <p class="mb-5">カテゴリー</p>
-                <ul class="grid gap-3 pl-3">
-                  <li><NuxtLink to="#">技術記事</NuxtLink></li>
-                  <li><NuxtLink to="#">オンライン留学</NuxtLink></li>
-                </ul>
-              </li>
-            </ul>
-          </sidebar>
+    <div class="mt-16">
+      <main class="bg-slate-100">
+        <div v-if="showModal" class="fixed t-16 w-full h-full bg-white py-10 px-5">
+          <NavMenu />
         </div>
-        <div class="col-span-3">
-          <slot />
+        <div class="container max-w-5xl mx-auto py-12 px-5 grid md:grid-cols-4">
+          <div class="hidden md:block">
+            <sidebar class="fixed">
+              <NavMenu />
+            </sidebar>
+          </div>
+          <div class="col-span-3">
+            <slot />
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </div>
 </template>
+
+<script setup>
+const showModal = ref(false);
+const toggleModal = () => showModal.value = !showModal.value;
+</script>
