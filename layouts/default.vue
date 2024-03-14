@@ -1,9 +1,9 @@
 <template>
   <div class="min-h-screen flex flex-col">
     <header
-      class="grid-rows-subgrid flex border-b fixed left-0 right-0 bg-white h-16 items-center"
+      class="grid-rows-subgrid border-b fixed left-0 right-0 bg-white"
     >
-      <div class="container max-w-5xl mx-auto py-2 px-5">
+      <div class="container max-w-5xl mx-auto py-2 px-5 flex items-center h-16">
         <NuxtLink to="/" class="flex items-center gap-x-3">
           <img
             src="/assets/img/profile.jpg"
@@ -15,8 +15,8 @@
       </div>
     </header>
     <main class="bg-slate-100 grow py-12 mt-16">
-      <div class="container max-w-5xl mx-auto px-5 grid grid-cols-4">
-        <div>
+      <div class="container max-w-5xl mx-auto px-5 grid md:grid-cols-4">
+        <div class="hidden md:block">
           <sidebar class="fixed">
             <ul class="grid gap-7">
               <li><NuxtLink to="/about">自己紹介</NuxtLink></li>
