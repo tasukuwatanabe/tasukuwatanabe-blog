@@ -1,9 +1,9 @@
 <template>
   <div class="min-h-screen flex flex-col">
-    <header
-      class="grid-rows-subgrid border-b fixed left-0 right-0 bg-white"
-    >
-      <div class="container max-w-5xl mx-auto py-2 px-5 flex items-center h-16">
+    <header class="grid-rows-subgrid border-b fixed left-0 right-0 bg-white">
+      <div
+        class="container max-w-5xl mx-auto py-2 px-5 flex justify-between items-center h-16"
+      >
         <NuxtLink to="/" class="flex items-center gap-x-3">
           <img
             src="/assets/img/profile.jpg"
@@ -12,6 +12,9 @@
           />
           <h1 class="text-l font-semibold">Tasuku Watanabe</h1>
         </NuxtLink>
+        <div class="block md:hidden">
+          <Icon name="solar:hamburger-menu-linear" size="2em" />
+        </div>
       </div>
     </header>
     <main class="bg-slate-100 grow py-12 mt-16">
