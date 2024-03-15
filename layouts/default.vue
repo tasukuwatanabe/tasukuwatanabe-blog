@@ -25,7 +25,7 @@
         <div v-if="showModal" class="fixed t-16 w-full h-full bg-white py-10 px-5">
           <NavMenu />
         </div>
-        <div class="container max-w-5xl mx-auto py-12 px-5 grid md:grid-cols-4">
+        <div class="container max-w-5xl mx-auto py-12 px-5 grid md:grid-cols-4 h-fullMinusHeader">
           <div class="hidden md:block">
             <sidebar class="fixed">
               <NavMenu />

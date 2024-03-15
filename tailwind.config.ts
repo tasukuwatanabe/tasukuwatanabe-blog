@@ -6,8 +6,13 @@ export default {
       aspectRatio: {
         'thumbnail': '16/7'
       },
+      height: {
+        'fullMinusHeader': 'calc(100vh - 4rem)'
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ]
 }
 
