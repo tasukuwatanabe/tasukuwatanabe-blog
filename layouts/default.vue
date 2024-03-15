@@ -8,7 +8,7 @@
       >
         <NuxtLink to="/" class="flex items-center gap-x-3">
           <img
-            src="/assets/img/profile.jpg"
+            src="~/assets/img/profile.jpg"
             class="w-10 h-10 rounded-full"
             alt="Tasuku Watanabe"
           />
@@ -25,11 +25,11 @@
         <div v-if="showModal" class="fixed t-16 w-full h-full bg-white py-10 px-5">
           <NavMenu />
         </div>
-        <div class="container max-w-5xl mx-auto py-12 px-5 grid md:grid-cols-4 h-fullMinusHeader">
+        <div class="container max-w-5xl mx-auto py-12 px-5 grid md:grid-cols-4 min-h-screenMinusHeader">
           <div class="hidden md:block">
-            <sidebar class="fixed">
+            <div class="fixed">
               <NavMenu />
-            </sidebar>
+            </div>
           </div>
           <div class="col-span-3">
             <slot />

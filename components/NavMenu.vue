@@ -1,6 +1,6 @@
 <template>
   <ul class="grid gap-7">
-    <li><NuxtLink to="/about">自己紹介</NuxtLink></li>
+    <li><NuxtLink to="#">自己紹介</NuxtLink></li>
     <li>
       <p class="mb-5">カテゴリー</p>
       <ul class="grid gap-3 pl-3">

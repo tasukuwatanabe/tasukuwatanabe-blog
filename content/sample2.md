@@ -1,3 +1,9 @@
+---
+title: Sample 2
+createdAt: 2024-02-01 00:00:00
+thumbnail: /img/sample2.jpg
+---
+
 # Sample 2
 
 ## Introduction
