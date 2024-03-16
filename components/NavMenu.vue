@@ -1,11 +1,25 @@
 <template>
-  <ul class="grid gap-7">
-    <li><NuxtLink to="#">自己紹介</NuxtLink></li>
+  <ul class="grid gap-10">
     <li>
-      <p class="mb-5">カテゴリー</p>
-      <ul class="grid gap-3 pl-3">
+      <NuxtLink to="#" class="font-semibold">自己紹介</NuxtLink>
+    </li>
+    <li>
+      <p class="mb-4 font-semibold">カテゴリー</p>
+      <ul class="grid gap-3 pl-4 border-l-2">
         <li><NuxtLink to="#">技術記事</NuxtLink></li>
         <li><NuxtLink to="#">オンライン留学</NuxtLink></li>
+      </ul>
+    </li>
+    <li>
+      <p class="mb-4 font-semibold">情報発信</p>
+      <ul class="grid gap-3 pl-4 border-l-2">
+        <li><NuxtLink to="#" target="_blank">Twitter</NuxtLink></li>
+        <li>
+          <NuxtLink to="https://github.com/tasukuwatanabe" target="_blank"
+            >Github</NuxtLink
+          >
+        </li>
+        <li><NuxtLink to="#" target="_blank">Note</NuxtLink></li>
       </ul>
     </li>
   </ul>

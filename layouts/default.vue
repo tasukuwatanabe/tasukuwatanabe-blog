@@ -22,7 +22,7 @@
     </header>
     <div class="mt-16">
       <main class="bg-slate-100">
-        <div v-if="showModal" class="fixed t-16 w-full h-full bg-white py-10 px-5">
+        <div v-if="showModal" class="fixed t-16 w-full h-full bg-white py-10 px-7">
           <NavMenu />
         </div>
         <div class="container max-w-5xl mx-auto py-12 px-5 grid md:grid-cols-4 min-h-screenMinusHeader">
