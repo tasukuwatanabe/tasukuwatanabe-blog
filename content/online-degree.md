@@ -1,1 +1,1 @@
-::posts{category="online-degree"}
+::posts{category="オンライン留学"}

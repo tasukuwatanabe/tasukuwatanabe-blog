@@ -8,6 +8,9 @@
     >
       <img :src="post.thumbnail" class="aspect-thumbnail w-full" />
       <div class="p-5 grid gap-3">
+        <div>
+          <CategoryTag :category="post.category" />
+        </div>
         <div class="font-semibold text-xl">{{ post.title }}</div>
         <div>{{ post.displayDate }}</div>
       </div>

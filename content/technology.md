@@ -1,1 +1,1 @@
-::posts{category="technology"}
+::posts{category="技術記事"}

@@ -2,9 +2,12 @@
 title: Sample 1
 createdAt: 2024-01-01 00:00:00
 thumbnail: /img/sample1.jpg
-category: online-degree
+category: オンライン留学
 type: post
 ---
+
+::CategoryTag{:category="category" class="mb-4"}
+::
 
 # Sample 1
 
