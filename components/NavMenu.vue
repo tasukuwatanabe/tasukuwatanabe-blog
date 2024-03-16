@@ -6,8 +6,8 @@
     <li>
       <p class="mb-4 font-semibold">カテゴリー</p>
       <ul class="grid gap-3 pl-4 border-l-2">
-        <li><NuxtLink to="#">技術記事</NuxtLink></li>
-        <li><NuxtLink to="#">オンライン留学</NuxtLink></li>
+        <li><NuxtLink to="/technology">技術記事</NuxtLink></li>
+        <li><NuxtLink to="/online-degree">オンライン留学</NuxtLink></li>
       </ul>
     </li>
     <li>

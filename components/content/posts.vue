@@ -16,10 +16,12 @@
 </template>
 
 <script setup>
+const { category } = defineProps(['category']);
+
 const { data } = await useAsyncData('blog-list', () => {
   return queryContent('/')
-    .where({ _path: { $ne: '/' } })
-    .only(['_path', 'title', 'createdAt', 'thumbnail'])
+    .where({ type: { $eq: 'post' }, category: { $eq: category } })
+    .only(['_path', 'title', 'createdAt', 'thumbnail', 'category'])
     .sort({ createdAt: -1 })
     .find();
 });
