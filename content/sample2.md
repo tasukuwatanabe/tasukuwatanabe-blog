@@ -6,7 +6,7 @@ category: 技術記事
 type: post
 ---
 
-::CategoryTag{:category="category" class="mb-4"}
+::CategoryTag{:category="category" className="mb-4"}
 ::
 
 # Sample 2

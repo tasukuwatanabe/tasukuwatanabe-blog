@@ -6,7 +6,7 @@ category: オンライン留学
 type: post
 ---
 
-::CategoryTag{:category="category" class="mb-4"}
+::CategoryTag{:category="category" className="mb-4"}
 ::
 
 # Sample 1
