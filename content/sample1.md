@@ -11,6 +11,9 @@ type: post
 
 # Sample 1
 
+::Thumbnail{:thumbnail="thumbnail" className="mb-4"}
+::
+
 ## Introduction
 This is some text. *This is italic*.
 
