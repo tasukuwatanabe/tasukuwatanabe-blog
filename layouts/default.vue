@@ -4,7 +4,7 @@
       class="grid-rows-subgrid border-b bg-white fixed left-0 right-0 z-10"
     >
       <div
-        class="container max-w-5xl mx-auto py-2 px-5 flex justify-between items-center h-16"
+        class="max-w-5xl mx-auto py-2 px-5 flex justify-between items-center h-16"
       >
         <NuxtLink to="/" class="flex items-center gap-x-3">
           <img
@@ -25,13 +25,13 @@
         <div v-if="showModal" class="fixed t-16 w-full h-full bg-white py-10 px-7">
           <NavMenu />
         </div>
-        <div class="container max-w-5xl mx-auto py-12 px-5 grid md:grid-cols-4 min-h-screenMinusHeader">
+        <div class="max-w-5xl mx-auto py-12 px-5 grid md:grid-cols-baseLayout gap-4 min-h-screenMinusHeader">
           <div class="hidden md:block">
             <div class="fixed">
               <NavMenu />
             </div>
           </div>
-          <div class="col-span-3">
+          <div>
             <slot />
           </div>
         </div>

@@ -8,6 +8,9 @@ export default {
       },
       minHeight: {
         'screenMinusHeader': 'calc(100vh - 4rem)'
+      },
+      gridTemplateColumns: {
+        'baseLayout': '1fr 3fr'
       }
     },
   },

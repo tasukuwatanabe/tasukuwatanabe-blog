@@ -1,5 +1,5 @@
 <template>
-  <div class="prose">
+  <div class="prose max-w-none">
     <ContentDoc />
   </div>
 </template>
