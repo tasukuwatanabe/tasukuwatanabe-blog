@@ -3,7 +3,7 @@ title: Sample 1
 createdAt: 2024-01-01 00:00:00
 thumbnail: /img/sample1.jpg
 category: オンライン留学
-type: post
+type: entry
 ---
 
 ::CategoryTag{:category="category" className="mb-4"}
