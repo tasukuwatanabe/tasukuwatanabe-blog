@@ -1,15 +1,42 @@
 ---
-title: Sample 1
+title: タイトル1タイトル1タイトル1タイトル1タイトル1
+description: ソフトウェアエンジニアの渡邉佑のポートフォリオサイトです
 createdAt: 2024-01-01 00:00:00
 thumbnail: /img/sample1.jpg
 category: オンライン留学
 type: entry
+head:
+  meta:
+    - name: robots
+      content: index, follow
+    - name: author
+      content: 渡邉 佑
+    - property: og:url
+      content: /entry/sample1
+    - property: og:title
+      content: タイトル1タイトル1タイトル1タイトル1タイトル1
+    - property: og:image
+      content: /img/sample1.jpg
+    - property: og:description
+      content: ソフトウェアエンジニアの渡邉佑のポートフォリオサイトです
+    - property: twitter:url
+      content: /entry/sample1
+    - property: twitter:title
+      content: タイトル1タイトル1タイトル1タイトル1タイトル1
+    - property: twitter:image
+      content: /img/sample1.jpg
+    - property: twitter:description
+      content: ソフトウェアエンジニアの渡邉佑のポートフォリオサイトです
+    - property: twitter:card
+      content: summary
+    - property: lang
+      content: ja
 ---
 
 ::CategoryTag{:category="category" className="mb-4"}
 ::
 
-# Sample 1
+# {{ $doc.title　}}
 
 ::Thumbnail{:thumbnail="thumbnail" className="mb-4"}
 ::
@@ -41,6 +68,6 @@ Tables:
 
 ```html
 <html>
-	<div>Hello!</div>
+  <div>Hello!</div>
 </html>
 ```
