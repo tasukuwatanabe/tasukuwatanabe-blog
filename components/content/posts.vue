@@ -21,7 +21,7 @@
 <script setup>
 const { category } = defineProps(['category']);
 
-const { data } = await useAsyncData('entry-list', () => {
+const { data } = await useAsyncData('entries', () => {
   return queryContent('/entry')
     .where({ type: { $eq: 'entry' }, category: { $eq: category } })
     .only(['_path', 'title', 'createdAt', 'thumbnail', 'category'])

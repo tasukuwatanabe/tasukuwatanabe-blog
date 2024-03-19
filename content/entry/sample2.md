@@ -11,20 +11,12 @@ head:
       content: index, follow
     - name: author
       content: 渡邉 佑
-    - property: og:url
-      content: /entry/sample2
     - property: og:title
       content: タイトル2タイトル2タイトル2タイトル2タイトル2
-    - property: og:image
-      content: /img/sample2.jpg
     - property: og:description
       content: ソフトウェアエンジニアの渡邉佑のポートフォリオサイトです
-    - property: twitter:url
-      content: /entry/sample2
     - property: twitter:title
       content: タイトル2タイトル2タイトル2タイトル2タイトル2
-    - property: twitter:image
-      content: /img/sample2.jpg
     - property: twitter:description
       content: ソフトウェアエンジニアの渡邉佑のポートフォリオサイトです
     - property: twitter:card
