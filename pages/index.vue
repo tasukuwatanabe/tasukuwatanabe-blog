@@ -3,6 +3,6 @@
 </template>
 
 <script setup>
-const { convertAbsoluteMeta } = useMeta();
-convertAbsoluteMeta();
+const { addCustomMeta } = useCustomMeta();
+addCustomMeta();
 </script>
