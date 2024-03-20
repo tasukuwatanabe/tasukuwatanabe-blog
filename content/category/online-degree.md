@@ -2,6 +2,7 @@
 title: オンライン留学
 description: オンライン留学に関する記事をまとめたページです
 thumbnail: /img/sample1.jpg
+category: オンライン留学
 head:
   meta:
     - name: robots
@@ -22,4 +23,4 @@ head:
       content: ja
 ---
 
-::posts{category="オンライン留学"}
+{{ doc.title }}

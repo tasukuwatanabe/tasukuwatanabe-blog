@@ -25,14 +25,6 @@ head:
       content: ja
 ---
 
-::CategoryTag{:category="category" className="mb-4"}
-::
-
-# {{ $doc.title }}
-
-::Thumbnail{:thumbnail="thumbnail" className="mb-4"}
-::
-
 ## Introduction
 This is some text. *This is italic*.
 
