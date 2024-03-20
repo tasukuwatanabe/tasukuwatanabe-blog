@@ -1,5 +1,5 @@
 <template>
-  <div class="prose max-w-none">
+  <div class="max-w-none">
     <ContentDoc>
       <template #not-found>
         <NotFound />

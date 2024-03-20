@@ -4,9 +4,9 @@
       v-for="entry in entries"
       :key="entry._path"
       :to="entry._path"
-      class="bg-white rounded-xl overflow-hidden"
+      class="bg-white dark:bg-slate-800 rounded-xl border dark:border-slate-700 overflow-hidden no-underline"
     >
-      <img :src="entry.thumbnail" class="aspect-thumbnail w-full" />
+      <img :src="entry.thumbnail" class="aspect-thumbnail w-full m-0" />
       <div class="p-5 grid gap-3">
         <div>
           <CategoryTag :category="entry.category" />

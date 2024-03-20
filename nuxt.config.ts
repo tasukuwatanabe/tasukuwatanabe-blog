@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
     'nuxt-icon',
+    '@nuxtjs/color-mode'
   ],
   content: {
     highlight: {
@@ -12,5 +13,8 @@ export default defineNuxtConfig({
         default: 'dracula'
       }
     }
+  },
+  colorMode: {
+    classSuffix: ''
   }
 })

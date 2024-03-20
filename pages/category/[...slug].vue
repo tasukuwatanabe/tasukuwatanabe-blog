@@ -5,9 +5,7 @@
     </template>
     <template v-slot="{ doc }">
       <ContentRenderer :value="doc">
-        <div class="prose">
-          <h1 class="text-xl mb-4">カテゴリー : {{ doc.title }}</h1>
-        </div>
+        <h1 class="text-xl mb-4">カテゴリー : {{ doc.title }}</h1>
         <Posts :category="doc.category" />
       </ContentRenderer>
     </template>
