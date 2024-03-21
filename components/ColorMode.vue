@@ -1,7 +1,7 @@
 <template>
   <div @click="toggleColorMode" class="text-slate-700 dark:text-slate-200 hover:cursor-pointer">
     <Icon
-      v-if="colorMode.preference === 'light'"
+      v-if="colorMode.preference === 'dark'"
       name="material-symbols:clear-day-rounded"
       size="2em"
     />
@@ -11,8 +11,6 @@
 
 <script setup>
 const colorMode = useColorMode();
-
-const MODES = ["light", "dark"];
 
 const toggleColorMode = () => {
   if (colorMode.preference === "light") {
