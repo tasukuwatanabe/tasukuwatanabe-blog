@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-const { thumbnail, className } = defineProps(['thumbnail', 'className']);
+defineProps(['thumbnail', 'className']);
 </script>
