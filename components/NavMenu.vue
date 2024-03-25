@@ -1,5 +1,5 @@
 <template>
-  <ul class="grid gap-10">
+  <ul class="grid gap-10 not-prose">
     <li>
       <NuxtLink to="#" class="font-semibold">自己紹介</NuxtLink>
     </li>

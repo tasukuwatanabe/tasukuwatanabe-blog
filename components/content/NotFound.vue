@@ -1,6 +1,6 @@
 <template>
-  <div class="prose">
-    <p class="text-xl mt-0">お探しのページは見つかりませんでした</p>
+  <div>
+    <p class="text-xl">お探しのページは見つかりませんでした</p>
     <BackToTop />
   </div>
 </template>
