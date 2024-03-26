@@ -1,5 +1,7 @@
 <template>
-  <div class="mx-auto py-12 px-5 grid md:grid-cols-baseLayout gap-4 min-h-screenMinusHeader">
+  <div
+    class="mx-auto py-12 px-5 grid md:grid-cols-baseLayout gap-4 min-h-screenMinusHeader"
+  >
     <ContentDoc>
       <template #not-found>
         <div class="hidden md:block">
@@ -12,7 +14,7 @@
       <template v-slot="{ doc }">
         <div class="hidden md:block">
           <div class="fixed">
-            <TocLinks v-if="doc.body.toc" :links="doc.body.toc.links" />
+            <TocLinks v-if="doc.body.toc" :links="doc.body.toc.links" :active-id="activeId" />
             <NavMenu v-else />
           </div>
         </div>
@@ -33,5 +35,31 @@ addCustomMeta();
 
 definePageMeta({
   layout: 'entry',
+});
+
+const activeId = ref(null);
+onMounted(() => {
+  const callback = (entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        activeId.value = entry.target.id;
+      }
+    }
+  };
+  const observer = new IntersectionObserver(callback, {
+    root: null,
+    threshold: 0.5,
+  });
+  const elements = document.querySelectorAll(['h2', 'h3']);
+
+  for (const element of elements) {
+    observer.observe(element);
+  }
+
+  onBeforeUnmount(() => {
+    for (const element of elements) {
+      observer.unobserve(element);
+    }
+  });
 });
 </script>
