@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <header
-      class="grid-rows-subgrid bg-white dark:bg-slate-900 fixed left-0 right-0 z-10"
-    >
+  <div class="grid-rows-subgrid bg-white dark:bg-slate-900 fixed top-0 left-0 right-0 z-10">
+    <header>
       <div
         class="max-w-5xl mx-auto py-2 px-5 flex justify-between items-center h-16"
       >

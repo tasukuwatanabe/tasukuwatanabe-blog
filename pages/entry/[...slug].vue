@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="mx-auto py-12 px-5 grid md:grid-cols-baseLayout gap-4 min-h-screenMinusHeader"
-  >
+  <div class="mx-auto py-12 px-5 grid md:grid-cols-baseLayout gap-4">
     <ContentDoc>
       <template #not-found>
         <div class="hidden md:block">

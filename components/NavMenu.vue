@@ -1,7 +1,7 @@
 <template>
   <ul class="grid gap-10 not-prose">
     <li>
-      <NuxtLink to="#" class="font-semibold">自己紹介</NuxtLink>
+      <NuxtLink to="/about" class="font-semibold">自己紹介</NuxtLink>
     </li>
     <li>
       <p class="mb-4 font-semibold">カテゴリー</p>
@@ -19,7 +19,6 @@
             >Github</NuxtLink
           >
         </li>
-        <li><NuxtLink to="https://note.com/tasuku_web/" target="_blank">Note</NuxtLink></li>
       </ul>
     </li>
   </ul>

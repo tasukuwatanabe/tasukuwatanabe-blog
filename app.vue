@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <div class="prose dark:prose-invert dark:prose-pre:bg-slate-700 max-w-5xl mx-auto">
+    <div class="prose dark:prose-invert dark:prose-pre:bg-slate-700 max-w-none">
       <NuxtPage />
     </div>
   </NuxtLayout>
