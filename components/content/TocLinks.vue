@@ -1,7 +1,7 @@
 <template>
   <div class="not-prose">
-    <p class="mb-4" v-if="!level">目次</p>
-    <ul>
+    <p class="mb-2 font-semibold" v-if="!level">目次</p>
+    <ul class="grid gap-y-1">
       <li v-for="link of links" :key="link.id">
         <NuxtLink
           :to="{ path: route.path, hash: `#${link.id}` }"
