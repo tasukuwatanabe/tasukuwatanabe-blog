@@ -28,5 +28,11 @@ head:
 
 [HRBrain株式会社](https://www.hrbrain.co.jp/)でフロントエンドの仕事をしています。
 
-- [Twitter]
-- [GitHub]
+## スキルセット
+
+- HTML / CSS / Sass(SCSS) / BootStrap / TailwindCSS
+- JavaScript / TypeScript / jQuery / React.js / Vue.js / Next.js / Nuxt.js / Node.js
+- PHP / WordPress / MySQL
+- Git / GitHub / Gulp / webpack / Docker
+- Mac / Linux
+- Google Analytics / Google Tag Manager / BigQuery / Looker / Looker Studio
