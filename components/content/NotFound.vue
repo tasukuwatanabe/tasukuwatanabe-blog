@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="text-xl">お探しのページは見つかりませんでした</p>
+    <p class="text-xl mb-5">お探しのページは見つかりませんでした</p>
     <BackToTop />
   </div>
 </template>
