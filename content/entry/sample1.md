@@ -5,7 +5,6 @@ createdAt: 2024-01-01 00:00:00
 thumbnail: /img/sample1.jpg
 category: 技術記事
 type: entry
-toc: true
 head:
   meta:
     - name: robots
