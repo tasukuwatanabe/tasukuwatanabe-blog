@@ -1,7 +1,7 @@
 <template>
   <div class="grid gap-5 not-prose">
     <NuxtLink
-      v-for="entry in entries"
+      v-for="entry in posts"
       :key="entry._path"
       :to="entry._path"
       class="bg-white dark:bg-slate-800 rounded-xl border dark:border-slate-700 overflow-hidden"
@@ -21,15 +21,15 @@
 <script setup>
 const { category } = defineProps(['category']);
 
-const { data } = await useAsyncData('entries', () => {
-  return queryContent('/entry')
-    .where({ type: { $eq: 'entry' }, category: { $eq: category } })
+const { data } = await useAsyncData('posts', () => {
+  return queryContent('/')
+    .where({ type: { $eq: 'post' }, category: { $eq: category } })
     .only(['_path', 'title', 'createdAt', 'thumbnail', 'category'])
     .sort({ createdAt: -1 })
     .find();
 });
 
-const entries = computed(() => {
+const posts = computed(() => {
   if (!data.value) return [];
 
   return data.value.map((entry) => {

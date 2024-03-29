@@ -1,28 +1,10 @@
 ---
 title: タイトル1タイトル1タイトル1タイトル1タイトル1
-description: ソフトウェアエンジニアの渡邉佑のポートフォリオサイトです
+description: 説明文1説明文1説明文1説明文1説明文1
 createdAt: 2024-01-01 00:00:00
 thumbnail: /img/sample1.jpg
 category: 技術記事
-type: entry
-head:
-  meta:
-    - name: robots
-      content: index, follow
-    - name: author
-      content: 渡邉 佑
-    - property: og:title
-      content: タイトル1タイトル1タイトル1タイトル1タイトル1
-    - property: og:description
-      content: ソフトウェアエンジニアの渡邉佑のポートフォリオサイトです
-    - property: twitter:title
-      content: タイトル1タイトル1タイトル1タイトル1タイトル1
-    - property: twitter:description
-      content: ソフトウェアエンジニアの渡邉佑のポートフォリオサイトです
-    - property: twitter:card
-      content: summary
-    - property: lang
-      content: ja
+type: post
 ---
 
 ## Introduction
