@@ -37,6 +37,7 @@ if (post) {
 
   useSeoMeta({
     canonical: `${siteUrlWithoutSlash}${formattedPath}`,
+    titleTemplate: title => title && route.path !== '/' ? `${title} | 渡邉佑ポートフォリオサイト` : title,
     ogDescription: post.value.description,
     ogUrl: `${siteUrlWithoutSlash}${formattedPath}`,
     ogImage: `${siteUrlWithoutSlash}${post.value.thumbnail}`,

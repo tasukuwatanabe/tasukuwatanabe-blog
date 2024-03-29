@@ -17,7 +17,6 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'ja', prefix: 'og: <https://ogp.me/ns#>' },
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: '渡邉佑ポートフォリオサイト',
       meta: [
         { name: 'robots', content: 'index, follow' },
         { name: 'description', content: '渡邉佑ポートフォリオサイト' },

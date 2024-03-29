@@ -1,6 +1,6 @@
 ---
-title: 自己紹介 | 渡邉佑ポートフォリオサイト
-description: 自己紹介 | 渡邉佑ポートフォリオサイト
+title: 自己紹介
+description: 自己紹介
 thumbnail: /img/sample1.jpg
 ---
 
