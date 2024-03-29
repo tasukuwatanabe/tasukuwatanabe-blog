@@ -1,3 +1,3 @@
 <template>
-  <Posts />
+  <ContentDoc />
 </template>
