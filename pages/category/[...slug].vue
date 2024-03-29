@@ -13,23 +13,33 @@
 </template>
 
 <script setup>
+import { withoutTrailingSlash } from 'ufo';
+
+const fetchPost = async (path) => {
+  const { data: post } = await useAsyncData(() =>
+    queryContent(path).findOne()
+  );
+
+  return post;
+}
+
 const route = useRoute();
-const { data: post } = await useAsyncData(() =>
-  queryContent(route.path).findOne()
-);
+const post = await fetchPost(route.path);
 
-const runtimeConfig = useRuntimeConfig();
+if (post) {
+  const pathWithoutSlash = withoutTrailingSlash(route.path);
+  const formattedPath = pathWithoutSlash === '/' ? '' : pathWithoutSlash;
+  const runtimeConfig = useRuntimeConfig();
+  const siteUrlWithoutSlash = withoutTrailingSlash(runtimeConfig.public.siteUrl);
 
-(function () {
-  if (!post) return;
   useSeoMeta({
-    canonical: `${runtimeConfig.public.siteUrl}${route.path}`,
+    canonical: `${siteUrlWithoutSlash}${formattedPath}`,
     ogDescription: post.value.description,
-    ogUrl: `${runtimeConfig.public.siteUrl}${route.path}`,
-    ogImage: `${runtimeConfig.public.siteUrl}${post.value.thumbnail}`,
+    ogUrl: `${siteUrlWithoutSlash}${formattedPath}`,
+    ogImage: `${siteUrlWithoutSlash}${post.value.thumbnail}`,
     twitterTitle: post.value.title,
     twitterDescription: post.value.description,
-    twitterImage: `${runtimeConfig.public.siteUrl}${post.value.thumbnail}`,
+    twitterImage: `${siteUrlWithoutSlash}${post.value.thumbnail}`,
   });
-})(post);
+}
 </script>
