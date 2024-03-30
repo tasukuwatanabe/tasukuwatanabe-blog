@@ -22,7 +22,7 @@
       v-if="showModal"
       class="fixed t-16 w-full h-full py-10 px-7 bg-white dark:bg-slate-900"
     >
-      <NavMenu />
+      <NavMenu :showModal="showModal" :toggleModal="toggleModal" />
     </div>
   </div>
 </template>
@@ -31,5 +31,5 @@
 defineProps(['showModal', 'toggleModal']);
 
 const showModal = ref(false);
-const toggleModal = () => showModal.value = !showModal.value;
+const toggleModal = () => setTimeout(() => showModal.value = !showModal.value, 100);
 </script>
