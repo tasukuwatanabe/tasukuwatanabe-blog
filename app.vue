@@ -19,10 +19,7 @@ body {
 import { withoutTrailingSlash } from 'ufo';
 
 const fetchPost = async (path) => {
-  const { data: post } = await useAsyncData(() =>
-    queryContent(path).findOne()
-  );
-
+  const { data: post } = await useAsyncData(() => queryContent(path).findOne());
   return post;
 }
 
