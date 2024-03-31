@@ -11,3 +11,11 @@
     </template>
   </ContentDoc>
 </template>
+
+<script setup>
+useSeoMeta({
+  meta: [
+    { name: 'robots', content: 'noindex,nofollow' }
+  ]
+})
+</script>
